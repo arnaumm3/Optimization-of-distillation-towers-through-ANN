@@ -15,7 +15,7 @@ models are made, scarcely showing no differences between them.
 
 ### Datasets:
   - "A-BCD_Model15.xlsx": result of the sampling from the "Hysys_Python_Interface.py" script. All the variables required to calculate the objective function are present.
-      NT	RR	Distillate_Rate	Column_Diameter	Column_Spacing	TOP_Flow_A	TOP_Flow_B	TOP_Flow_C	TOP_Flow_D	BOTTOM_Flow_A	BOTTOM_Flow_B	BOTTOM_Flow_C	BOTTOM_Flow_D	T_Condenser	T_Reboiler	Duty_Condenser	Duty_Reboiler	Area_Condenser	Area_Reboiler
+NT	RR	Distillate_Rate	Column_Diameter	Column_Spacing	TOP_Flow_A	TOP_Flow_B	TOP_Flow_C	TOP_Flow_D	BOTTOM_Flow_A	BOTTOM_Flow_B	BOTTOM_Flow_C	BOTTOM_Flow_D	T_Condenser	T_Reboiler	Duty_Condenser	Duty_Reboiler	Area_Condenser	Area_Reboiler
   
   - "iniHeatMap3D": initial set of data that contains the following information of the 10000 samples
       NT,RR,Distillate_Rate,TOP_Fraction_A,Recovery,Cost/kgTOP
@@ -36,6 +36,6 @@ models are made, scarcely showing no differences between them.
   
   - "ANN_A-BCD_sim.py":  from the "A-BCD_Model15.xlsx" dataset this script pretreats the data, creates the simulation   model and plots the results (does not apply the filtering).
   
-  - "Rotation": 
+  - "Rotation": script to plot the 3D animation plots.
   
-  - "Rotation1":
+  - "Rotation1": script to support the "Rotation" script, with the several information of the plotted figures in the project.
