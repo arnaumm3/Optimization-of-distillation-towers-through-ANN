@@ -1,13 +1,12 @@
 #%%
 """
-First of all several functions are defined to create the samples (Latin Hypercube Sampling)
-and the connection HYSYS-python (UnisimConnection(object)).
+First of all several functions are defined to create the samples (Latin Hypercube Sampling) and the connection HYSYS-python (UnisimConnection(object)).
 Then, samples are randomly generated and ordered, so HYSYS feasibility is improved.
-Finally, the connection is created and samples are simulated. The results are eventually
-exported to an Excel file through a pandas DataFrame.
+Finally, the connection is created and samples are simulated. The results are eventually exported to an Excel file through a pandas DataFrame.
 """
+### Functions to create the Sampling ###
 
-#%% Defini the Latin Hypercube Sampling functions
+#%% Define the Latin Hypercube Sampling functions
 import numpy as np
 import matplotlib.pyplot as plt
 import array
@@ -30,6 +29,10 @@ def latin_hypercube_sampling(LOW,UP,p,d):
   for i in range(0,d):
     p[:,i]=p[:,i]*(UP[i]-LOW[i])+LOW[i]
   return p
+
+
+
+### Functions to create the interface ###
 
 #%% Pip install
 #pip install cognite-sdk
